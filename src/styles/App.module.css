@@ -1,0 +1,7 @@
+.app {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #13181c, #1f2736);
+    overflow-y: auto;
+    overflow-x: hidden;
+}

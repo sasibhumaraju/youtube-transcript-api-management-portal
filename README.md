@@ -1,4 +1,13 @@
 youtube-transcript-api-client (readme.md)
-youtube-transcript-api-management-portal
-Public
 
+
+- Main
+    |- Home (component)
+    |- Your API (component)
+    |- Login (component)
+- Navbar
+    |- Logo (button)
+    |- Home (button)
+    |- API (button)
+    |- Login (button)
+- Footer
