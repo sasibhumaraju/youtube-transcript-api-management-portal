@@ -9,7 +9,7 @@ import { useEffect, useState } from "react"
 
 function Navbar() {
   const [openLogin,element] = useDialog(<Login/>)
-  const [progressBar, toggleProgressBar] = useState(false);
+  const [progressBar, toggleProgressBar] = useState(true);
   useEffect(()=>{
     progressBar && setTimeout(()=>{toggleProgressBar(!progressBar)},1000)
   },[progressBar])

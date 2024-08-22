@@ -3,6 +3,8 @@
     min-width: 350px;
     height: 100vh;
     background: linear-gradient(180deg, #13181c, #1f2736);
-    overflow-y: auto;
+    overflow-y:auto;
     overflow-x: hidden;
+    /* max-width: 1000px; */
+     /* position: relative; */
 }
