@@ -6,6 +6,7 @@ import styles from './App.module.css'
 import AppRoutes from "./routes/AppRoutes"
 import FooterLayout from "./layouts/FooterLayout"
 import Footer from "./components/Footer/Footer"
+import Font from "react-font"
 
 
 AsciiLogoArt()
@@ -17,7 +18,9 @@ function App() {
       <Navbar></Navbar>
     </NavLayout>
     <Main>
-      <AppRoutes/>
+      <Font family='Balsamiq Sans'>
+        <AppRoutes/>
+      </Font>
     </Main>
     <FooterLayout>
       <Footer/>

@@ -1,8 +1,8 @@
-
+import styles from './YourAPI.module.css'
 
 function YourAPI() {
   return (
-    <div>
+    <div className={styles.api}>
       Your API
     </div>
   )
