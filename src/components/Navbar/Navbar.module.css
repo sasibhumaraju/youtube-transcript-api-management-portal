@@ -1,7 +1,6 @@
 .navbar {
     width: calc(100% - 80px);
     height: 120px;
-    /* background-color: red; */
     display: flex;
     justify-content:space-between;
     align-items: center;
@@ -13,11 +12,7 @@
     height: 55px;
     color: white;
     font-weight: 900;
-    /* filter: drop-shadow(0px 0px 2px red); */
-    /* border: solid 10px red; */
-        filter: invert();
-    /* box-shadow: 0 0 0 5px green; */
-   
+    filter: invert();
 }
 
 .link_style {
@@ -29,7 +24,7 @@
 }
 
 button {
-    /* all: unset;  */
+    all: unset; 
     /* display: inline-block; */
     /* cursor: pointer; */
 }
@@ -39,8 +34,6 @@ button {
     height: 45px;
     width: 85px;
     text-align: center;
-    /* padding: 5px 10px; */
-    border: "20px solid green";
     cursor: pointer;
     border: none;
     font-weight: 700;
@@ -48,3 +41,26 @@ button {
     font-size: 18px;
     margin: 10px 20px;
 }
+
+@media  (max-width: 767.98px) {
+    .navbar {
+        width: calc(100% - 40px);
+        padding: 0px 20px;
+    }
+    .link_style {
+        margin: 0px 10px;
+        font-weight: 100 !important;
+        font-size: 17px;
+    }
+    .login_button {
+        margin: 10px 10px;
+        font-size: 17px;
+        height: 38px;
+        width: 78px;
+    }
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+  }
+  

@@ -1,11 +1,9 @@
-import React from 'react'
-import styles from "../styles/Navbar.module.css"
-import logo from '../assets/logo4.png'
-import { Link, NavLink } from 'react-router-dom'
+import styles from "./Navbar.module.css"
+import logo from '../../assets/logo4.png'
+import {  NavLink } from 'react-router-dom'
 import Font from 'react-font'
-import Dialog from '../layouts/Dialog'
-import Login from '../pages/Login'
-import useDialog from '../hooks/useDialog'
+import Login from '../../pages/Login/Login'
+import useDialog from '../../hooks/useDialog'
 
 
 function Navbar() {
