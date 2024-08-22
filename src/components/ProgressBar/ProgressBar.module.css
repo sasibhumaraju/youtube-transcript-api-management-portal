@@ -4,8 +4,8 @@
     left: 0;
     width: 100%;
     margin: 0px;
-    /* background: linear-gradient(to right, #FF0000,#FF0000, #282828, #FF0000); */
-    height: 6px;
+    /* background: linear-gradient(to right, #dc322d,#dc322d, #282828, #dc322d); */
+    height: 4.5px;
     overflow: hidden;
 }
 
@@ -15,8 +15,8 @@
     left: 0;
     width: 20000px;
     height: 1000px;
-    animation: gradientAnimation 1.5s ease-in infinite;
-    background: linear-gradient(to right, #FF0000,#FF0000, navy, purple , #FF0000,#FF0000, navy, purple , #FF0000,#FF0000, navy, purple , #FF0000,#FF0000, navy, purple );
+    animation: gradientAnimation 2.8s ease-in infinite;
+    background: linear-gradient(to right, #dc322d,#dc322d, #dc322d , #dc322d,rgb(250, 248, 248), #dc322d, #dc322d , #dc322d,#dc322d,rgb(250, 248, 248), #dc322d , #dc322d,  #dc322d, #dc322d, rgb(250, 248, 248) ,  #dc322d,#dc322d, #dc322d , #dc322d,rgb(250, 248, 248), #dc322d, #dc322d , #dc322d,#dc322d,rgb(250, 248, 248), #dc322d , #dc322d,  #dc322d, #dc322d, rgb(250, 248, 248) );
 }
 
 @keyframes gradientAnimation {
