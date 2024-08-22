@@ -1,5 +1,5 @@
 import styles from "./Navbar.module.css"
-import logo from '../../assets/logo4.png'
+import logo from '../../assets/logo2.png'
 import {  NavLink } from 'react-router-dom'
 import Font from 'react-font'
 import Login from '../../pages/Login/Login'
@@ -13,9 +13,6 @@ function Navbar() {
   useEffect(()=>{
     progressBar && setTimeout(()=>{toggleProgressBar(!progressBar)},500)
   },[progressBar])
-  const toggleProgressBarFunc = () => {
-    toggleProgressBar(!progressBar)
-  }
 
   return (
     <Font family='Balsamiq Sans' weight={700}>

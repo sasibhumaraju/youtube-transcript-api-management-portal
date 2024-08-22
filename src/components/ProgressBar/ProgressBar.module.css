@@ -15,7 +15,7 @@
     left: 0;
     width: 20000px;
     height: 1000px;
-    animation: gradientAnimation 1s ease-in infinite;
+    animation: gradientAnimation 1.5s ease-in infinite;
     background: linear-gradient(to right, #FF0000,#FF0000, navy, purple , #FF0000,#FF0000, navy, purple , #FF0000,#FF0000, navy, purple , #FF0000,#FF0000, navy, purple );
 }
 
@@ -26,7 +26,7 @@
 
   @media  (max-width: 767.98px) {
     .progress_bar {
-        height: 5px;
+        height: 4px;
     } 
   }
   
