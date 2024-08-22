@@ -11,7 +11,7 @@ function Navbar() {
   const [openLogin,element] = useDialog(<Login/>)
   const [progressBar, toggleProgressBar] = useState(false);
   useEffect(()=>{
-    progressBar && setTimeout(()=>{toggleProgressBar(!progressBar)},700)
+    progressBar && setTimeout(()=>{toggleProgressBar(!progressBar)},1000)
   },[progressBar])
 
   return (

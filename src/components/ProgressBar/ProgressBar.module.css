@@ -13,15 +13,17 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 20000px;
-    height: 1000px;
-    animation: gradientAnimation 2.8s ease-in infinite;
-    background: linear-gradient(to right, #dc322d,#dc322d, #dc322d , #dc322d,rgb(250, 248, 248), #dc322d, #dc322d , #dc322d,#dc322d,rgb(250, 248, 248), #dc322d , #dc322d,  #dc322d, #dc322d, rgb(250, 248, 248) ,  #dc322d,#dc322d, #dc322d , #dc322d,rgb(250, 248, 248), #dc322d, #dc322d , #dc322d,#dc322d,rgb(250, 248, 248), #dc322d , #dc322d,  #dc322d, #dc322d, rgb(250, 248, 248) );
+    width: 30000px;
+    height: 10px;
+    animation: gradientAnimation 0.9s ease-in forwards;
+    animation-iteration-count: 1;
+    background: linear-gradient(to right,       #dc322d,#dc322d,  rgb(255, 142, 142),  #dc322d,#dc322d,#dc322d,  #dc322d, #dc322d, rgb(250, 248, 248) );
 }
 
 @keyframes gradientAnimation {
-    0%{left: -15000px;}
-    100%{left: 0px}
+    0%{
+        left : calc(-30000px + 100%);}
+    100%{ left: 100%;}
   }
 
   @media  (max-width: 767.98px) {
