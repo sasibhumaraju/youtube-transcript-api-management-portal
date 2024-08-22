@@ -17,7 +17,7 @@
     height: 10px;
     animation: gradientAnimation 0.9s ease-in forwards;
     animation-iteration-count: 1;
-    background: linear-gradient(to right,       #dc322d,#dc322d,  rgb(255, 142, 142),  #dc322d,#dc322d,#dc322d,  #dc322d, #dc322d, rgb(250, 248, 248) );
+    background: linear-gradient(to right,       #dc322d,#dc322d,  #9333ea, #dc322d,#dc322d,  #dc322d, #dc322d, #9333ea, rgb(250, 248, 248) );
 }
 
 @keyframes gradientAnimation {

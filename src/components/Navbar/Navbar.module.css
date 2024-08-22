@@ -13,6 +13,12 @@
     color: white;
     font-weight: 900;
     /* filter: invert(); */
+    transition: transform 0.1s ease-in;
+}
+
+.logo:hover{
+    transform: scale(1.02);
+    filter: drop-shadow(0px 0px 5px #dc322d );
 }
 
 .link_style {
@@ -21,14 +27,19 @@
     margin: 0px 20px;
     font-weight: 100 !important;
     font-size: 20px;
+    /* transform: scale(1.7); */
+    
 }
-
+.link_style:hover{
+    transform: scale(1.7);
+    background: linear-gradient(45deg, #dc322d, #9333ea);
+    -webkit-background-clip: text;
+    color: transparent;
+}
 
 
 button {
     all: unset; 
-    /* display: inline-block; */
-    /* cursor: pointer; */
 }
 .login_button {
     background-color: white;
@@ -42,6 +53,12 @@ button {
     outline: none;
     font-size: 18px;
     margin: 10px 20px;
+}
+.login_button:hover{
+    transition: transform 0.1s ease-in;
+    background-color: rgb(147, 51, 234);
+    color: white;
+    filter: drop-shadow(0px 0px 60px #9333ea);
 }
 
 @media  (max-width: 767.98px) {
