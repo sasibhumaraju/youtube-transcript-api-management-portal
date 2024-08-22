@@ -1,9 +1,11 @@
 import Navbar from "./components/Navbar/Navbar"
-import Nav from "./layouts/Nav"
-import Main from './layouts/main'
+import NavLayout from "./layouts/NavLayout"
+import Main from './layouts/MainLayout'
 import AsciiLogoArt from './utils/AsciiLogoArt'
 import styles from './App.module.css'
 import AppRoutes from "./routes/AppRoutes"
+import FooterLayout from "./layouts/FooterLayout"
+import Footer from "./components/Footer/Footer"
 
 
 AsciiLogoArt()
@@ -11,12 +13,15 @@ function App() {
   
 
   return (<div className={styles.app}> 
-    <Nav>
+    <NavLayout>
       <Navbar></Navbar>
-    </Nav>
+    </NavLayout>
     <Main>
       <AppRoutes/>
     </Main>
+    <FooterLayout>
+      <Footer/>
+    </FooterLayout>
   </div> )
 }
 

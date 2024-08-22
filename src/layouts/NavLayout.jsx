@@ -1,6 +1,6 @@
 
 
-export default function Nav({children}) {
+export default function NavLayout({children}) {
   return (
     <nav >{children}</nav>
   )

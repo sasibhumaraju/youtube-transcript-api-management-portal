@@ -1,6 +1,6 @@
 
 
-export default function Footer({children}) {
+export default function FooterLayout({children}) {
   return (
     <footer>{children}</footer>
   )

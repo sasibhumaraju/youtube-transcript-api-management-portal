@@ -1,6 +1,6 @@
 
 
-export default function Section({children}) {
+export default function SectionLayout({children}) {
   return (
     <section>{children}</section>
   )

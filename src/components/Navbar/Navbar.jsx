@@ -25,14 +25,14 @@ function Navbar() {
       </span>
       <div>
         <span onClick={toggleProgressBar}>
-          <NavLink to="/"   className={styles.active}>Home</NavLink>
+          <NavLink to="/"   className={styles.active}><b>Home</b></NavLink>
         </span>
         <span onClick={toggleProgressBar}>
-          <NavLink to="your-api" className={styles.active}>API</NavLink>
+          <NavLink to="your-api" className={styles.active}><b>API</b></NavLink>
         </span>
         <span>
            
-            <button type='sumbit' onClick={openLogin} className={` ${styles.login_button}`}>LOGIN</button>
+            <button type='sumbit' onClick={openLogin} className={` ${styles.login_button}`}><b>LOGIN</b></button>
         </span>
       </div>
     </div>
