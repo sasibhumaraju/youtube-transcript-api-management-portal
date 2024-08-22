@@ -1,0 +1,32 @@
+.progress_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0px;
+    /* background: linear-gradient(to right, #FF0000,#FF0000, #282828, #FF0000); */
+    height: 6px;
+    overflow: hidden;
+}
+
+.progress_bar_animation_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20000px;
+    height: 1000px;
+    animation: gradientAnimation 1s ease-in infinite;
+    background: linear-gradient(to right, #FF0000,#FF0000, navy, purple , #FF0000,#FF0000, navy, purple , #FF0000,#FF0000, navy, purple , #FF0000,#FF0000, navy, purple );
+}
+
+@keyframes gradientAnimation {
+    0%{left: -15000px;}
+    100%{left: 0px}
+  }
+
+  @media  (max-width: 767.98px) {
+    .progress_bar {
+        height: 5px;
+    } 
+  }
+  
