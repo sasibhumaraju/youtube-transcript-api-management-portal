@@ -25,10 +25,10 @@ function Navbar() {
       </span>
       <div>
         <span onClick={toggleProgressBar}>
-          <NavLink to="/"  className={styles.link_style}>home</NavLink>
+          <NavLink to="/"   className={styles.active}>Home</NavLink>
         </span>
         <span onClick={toggleProgressBar}>
-          <NavLink to="your-api" className={styles.link_style}>your api</NavLink>
+          <NavLink to="your-api" className={styles.active}>API</NavLink>
         </span>
         <span>
            

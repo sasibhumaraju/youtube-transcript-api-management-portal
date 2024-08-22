@@ -21,17 +21,15 @@
     filter: drop-shadow(0px 0px 5px #dc322d );
 }
 
-.link_style {
+.active {
     text-decoration: none;
     color: white;
     margin: 0px 20px;
     font-weight: 100 !important;
     font-size: 20px;
-    /* transform: scale(1.7); */
-    
 }
-.link_style:hover{
-    transform: scale(1.7);
+.active:hover{
+    transform: scale(1.7) !important;
     background: linear-gradient(45deg, #dc322d, #9333ea);
     -webkit-background-clip: text;
     color: transparent;
@@ -62,11 +60,14 @@ button {
 }
 
 @media  (max-width: 767.98px) {
+
+   
     .navbar {
         width: calc(100% - 40px);
         padding: 0px 20px;
         height: 90px;
     }
+   
     .link_style {
         margin: 0px 10px;
         font-weight: 100 !important;
