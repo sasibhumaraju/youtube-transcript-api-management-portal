@@ -1,6 +1,6 @@
 {
-    "name": "Youtube Transcript Api Management Portal",
-    "short_name": "Youtube Transcript Api Management Portal",
+    "name": "youtube-transcript-api-client",
+    "short_name": "youtube-transcript-api-client",
     "icons": [
       {
         "src": "/logo2.png",
