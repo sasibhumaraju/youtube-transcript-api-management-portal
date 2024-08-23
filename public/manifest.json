@@ -1,6 +1,6 @@
 {
-    "name": "youtube-transcript-api-client",
-    "short_name": "youtube-transcript-api-client",
+    "name": "Youtube Transcript Api Management Portal",
+    "short_name": "Youtube Transcript Api Management Portal",
     "icons": [
       {
         "src": "/logo2.png",
@@ -14,7 +14,7 @@
       }
     ],
     "start_url": "/index.html",
-    "display": "fullscreen",
+    "display": "standalone",
     "theme_color": "#000000",
     "background_color": "#ffffff"
   }
