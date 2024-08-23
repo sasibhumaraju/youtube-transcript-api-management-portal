@@ -10,11 +10,16 @@ function useDialog({children}) {
         dialogRef.current.close();
     }
    
-    window.addEventListener('popstate', function(event) {
-      if (dialogRef.current && dialogRef.current.open) {
-           closeModalFunc()
+    useEffect(()=>{
+      function closeModalOnBackClickFuncfunction(event) {
+        if (dialogRef.current && dialogRef.current.open) {
+             closeModalFunc()
+        }
       }
-    });
+      window.addEventListener('popstate', closeModalOnBackClickFuncfunction);
+      return ()=>window.removeEventListener('popstate',closeModalOnBackClickFuncfunction) 
+    },[])
+   
 
   return (
     [openModalFunc,<dialog key={1} ref={dialogRef}  >{children} <button  onClick={closeModalFunc}>close</button></dialog>]

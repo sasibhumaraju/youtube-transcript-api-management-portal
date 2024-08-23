@@ -19,19 +19,18 @@ function Navbar() {
     <div className={`${styles.navbar}`}>
       {progressBar && <ProgressBar/>}
       <span onClick={toggleProgressBar}>
-        <NavLink to="/">
+        <NavLink to="">
         <img className={styles.logo} src={logo}></img>
         </NavLink>
       </span>
       <div>
         <span onClick={toggleProgressBar}>
-          <NavLink to="/"   className={styles.active}><b>Home</b></NavLink>
+          <NavLink to="home"   className={styles.active}><b>Home</b></NavLink>
         </span>
         <span onClick={toggleProgressBar}>
           <NavLink to="your-api" className={styles.active}><b>API</b></NavLink>
         </span>
         <span>
-           
             <button type='sumbit' onClick={openLogin} className={` ${styles.login_button}`}><b>LOGIN</b></button>
         </span>
       </div>
