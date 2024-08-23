@@ -10,7 +10,11 @@ function useDialog({children}) {
         dialogRef.current.close();
     }
    
-   
+    window.addEventListener('popstate', function(event) {
+      if (dialogRef.current && dialogRef.current.open) {
+           closeModalFunc()
+      }
+    });
 
   return (
     [openModalFunc,<dialog key={1} ref={dialogRef}  >{children} <button  onClick={closeModalFunc}>close</button></dialog>]

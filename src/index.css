@@ -19,5 +19,16 @@ body {
     flex-direction: column;
     align-items: center;
     background: linear-gradient(180deg, #13181c, #1f2736); */
+
+    -webkit-user-select: none; /* For Safari, Chrome, and Opera */
+    -moz-user-select: none;    /* For Firefox */
+    -ms-user-select: none;     /* For Internet Explorer and Edge */
+    user-select: none;         /* Standard property */
+}
+
+html, body {
+  touch-action: manipulation;
+
+  
 }
 
