@@ -8,6 +8,7 @@ import FooterLayout from "./layouts/FooterLayout"
 import Footer from "./components/Footer/Footer"
 import Font from "react-font"
 import { auth } from "./store/firebaseConfig"
+import SocialService from "./components/socialService/socialService"
 
 
 AsciiLogoArt()
@@ -22,6 +23,7 @@ function App() {
     <Main>
       <Font family='Balsamiq Sans'>
         <AppRoutes/>
+         <SocialService/>
       </Font>
     </Main>
     <FooterLayout>
