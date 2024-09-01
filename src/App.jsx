@@ -7,6 +7,7 @@ import AppRoutes from "./routes/AppRoutes"
 import FooterLayout from "./layouts/FooterLayout"
 import Footer from "./components/Footer/Footer"
 import Font from "react-font"
+import { auth } from "./store/firebaseConfig"
 
 
 AsciiLogoArt()
@@ -17,6 +18,7 @@ function App() {
     <NavLayout>
       <Navbar></Navbar>
     </NavLayout>
+    {/* {JSON.stringify(auth.currentUser.photoURL)} */}
     <Main>
       <Font family='Balsamiq Sans'>
         <AppRoutes/>

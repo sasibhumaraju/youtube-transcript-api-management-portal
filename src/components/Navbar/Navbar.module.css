@@ -29,12 +29,30 @@
     font-size: 20px;
 }
 .active:hover{
-    transform: scale(1.7) !important;
+    transform: scale(1.02) !important;
     background: linear-gradient(45deg, #dc322d, #9333ea);
     -webkit-background-clip: text;
     color: transparent;
 }
 
+.links {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    /* all: unset; */
+}
+.profile_pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+    display: block; 
+    margin: 0px 42.5px;
+    cursor: pointer;
+}
 
 button {
     all: unset; 
@@ -82,6 +100,15 @@ button {
     .logo {
         width: 45px;
         height: 45px;
+    }
+
+    .profile_pic {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover; /* Ensures the image covers the entire area without distortion */
+        display: block; 
+        margin: 0px 27.5px;
     }
   }
   

@@ -1,5 +1,6 @@
 .footer {
     width: 100%;
+    min-width: 380px;
     height: 250px;
     background-color: black;
     display: flex;
@@ -8,9 +9,10 @@
     flex-direction: column;
     word-spacing: 2px;
     gap: 15px;
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
-    left: 0;
+    left: 0; */
+    margin-top: 200px;
 }
 
 a{
@@ -23,4 +25,10 @@ a{
     height: 25px;
     filter: invert();
     margin: 0px 5px;
+}
+
+@media  (max-width: 767.98px) { 
+    .footer {
+        margin-top: 150px;
+    }
 }

@@ -1,10 +1,14 @@
 .app {
     width: 100vw;
-    min-width: 350px;
+    min-width: 380px;
     height: 100vh;
     background: linear-gradient(180deg, #13181c, #1f2736);
     overflow-y:auto;
     overflow-x: hidden;
     /* max-width: 1000px; */
      /* position: relative; */
+}
+
+dialog::backdrop {
+    background-color:rgba(0, 0, 0, 0.3); /* Semi-transparent black */
 }

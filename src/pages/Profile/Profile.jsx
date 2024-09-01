@@ -1,8 +1,8 @@
-
+import styles from './Profile.module.css'
 
 function Profile() {
   return (
-    <div>
+    <div className={styles.profile}>
       Profile
     </div>
   )

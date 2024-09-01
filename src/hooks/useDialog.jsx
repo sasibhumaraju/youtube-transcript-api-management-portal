@@ -1,6 +1,6 @@
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 
-function useDialog({children}) {
+function useDialog(Child) {
   
     const dialogRef = useRef(null)
     const openModalFunc = () => {
@@ -8,21 +8,11 @@ function useDialog({children}) {
     }
     const closeModalFunc = () => {
         dialogRef.current.close();
-    }
-   
-    useEffect(()=>{
-      function closeModalOnBackClickFuncfunction(event) {
-        if (dialogRef.current && dialogRef.current.open) {
-             closeModalFunc()
-        }
-      }
-      window.addEventListener('popstate', closeModalOnBackClickFuncfunction);
-      return ()=>window.removeEventListener('popstate',closeModalOnBackClickFuncfunction) 
-    },[])
+    } 
    
 
   return (
-    [openModalFunc,<dialog key={1} ref={dialogRef}  >{children} <button  onClick={closeModalFunc}>close</button></dialog>]
+    [openModalFunc,closeModalFunc,<dialog style={{border:"0px green solid", position:"relative", minWidth:"380px", borderRadius:"10px", backgroundColor:"#13181c",outline:"0px red solid", boxShadow:"0px 0px 200px rgba(0, 0, 0, 0.5)", padding:"0px"}} key={1} ref={dialogRef}  ><Child/> <button style={{color:"white", cursor:"pointer", position:"absolute", top: 50, right: 70, border:"solid 1px red", borderRadius:"5px", padding:"5px 8px", fontWeight:100, fontSize:"13px"}} onClick={closeModalFunc}>esc</button> </dialog>]
   )
 }
 
