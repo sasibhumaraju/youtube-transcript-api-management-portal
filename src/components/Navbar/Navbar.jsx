@@ -1,6 +1,6 @@
 import styles from "./Navbar.module.css"
 import logo from '../../assets/logo2.png'
-import {  NavLink } from 'react-router-dom'
+import {  NavLink, useNavigate } from 'react-router-dom'
 import Font from 'react-font'
 import Login from '../../pages/Login/Login'
 import useDialog from '../../hooks/useDialog'
@@ -15,6 +15,7 @@ function Navbar() {
   const [progressBar, toggleProgressBar] = useState(true);
   const [profileUrl, setprofileUrl] = useState(null);
   const [showLoginButton, setShowLoginButton] = useState(false)
+  const navigate = useNavigate()
   useEffect(()=>{
     progressBar && setTimeout(()=>{toggleProgressBar(!progressBar)},1000)
   },[progressBar])
@@ -55,7 +56,7 @@ function Navbar() {
           <NavLink to="your-api" className={styles.active}><b>API</b></NavLink>
         </div>
         <div onClick={toggleProgressBar}>
-          { (profileUrl)?  <img className={styles.profile_pic} src={profileUrl}></img> : null}
+          { (profileUrl)?  <img className={styles.profile_pic} onClick={()=>navigate("profile")} src={profileUrl}></img> : null}
           { (showLoginButton)? <button disabled={profileUrl!==null} type='sumbit' onClick={openLogin} className={` ${styles.login_button}`}><b>LOGIN</b></button>: null}
         </div>
       </div>

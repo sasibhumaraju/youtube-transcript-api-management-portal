@@ -1,22 +1,43 @@
-import client from '../../store/supabaseClient'
 import styles from './Login.module.css'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import gitLogo from '../../assets/icons/github.svg'
 import { getAuth, signInWithPopup, GithubAuthProvider, signOut } from "firebase/auth";
 import { app, auth } from '../../store/firebaseConfig';
+import { fetchData, insertData } from '../../store/Database';
+import { SHA224 } from 'crypto-js';
+import CryptoJS from 'crypto-js';
+import {  toast } from 'react-toastify';
 
 
 function Login() {
   
+  
+      // const [openSnackbar, closeSnackbar] = useSnackbar()
       const login = async () => {
           const provider = new  GithubAuthProvider(app)
           const auth = getAuth(app);
           signInWithPopup(auth, provider)
-          .then((result) => {
-            console.log(result)
-          // const credential = GithubAuthProvider.credentialFromResult(result);
-          // const token = credential.accessToken;
-          // const user = result.user;
+          .then(async (result) => {
+            const apiKey = CryptoJS.lib.WordArray.random(32).toString();
+            const emailId = result.user.email;
+            const name = result.user.displayName;
+            const profileUrl = result.user.photoURL;
+            const { data, error } = await fetchData('api_keys',"email",emailId);
+              toast("login succesful")
+              {
+              const userData = {
+                email: emailId,
+                api_key: apiKey,
+                is_active: true,
+                name: name,
+                profile_url: profileUrl
+              }
+              const error = await insertData('api_keys',userData);
+              console.log(error);
+
+            }
+            
+            // insertData("api_keys",)
           }).catch((error) => {
             console.log(error)
           // const errorCode = error.code;

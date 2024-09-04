@@ -5,6 +5,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(180deg, #13181c, #1f2736);
 }
 
 
@@ -15,6 +16,7 @@ body {
   min-width: 100vw;
   height: 100vh;
   overflow: hidden;
+  background: linear-gradient(180deg, #13181c, #1f2736);
   /* display: flex;
     flex-direction: column;
     align-items: center;

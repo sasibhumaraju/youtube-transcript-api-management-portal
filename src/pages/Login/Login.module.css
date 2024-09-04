@@ -1,6 +1,6 @@
 .login {
     max-width: calc(500px - 140px);
-    min-width: calc(380px - 140px);
+    min-width: calc(300px - 140px);
     height: 400px;
     overflow-y: auto;
     background-color: #13181c ;

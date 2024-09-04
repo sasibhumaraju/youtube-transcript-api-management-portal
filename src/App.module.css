@@ -1,6 +1,6 @@
 .app {
     width: 100vw;
-    min-width: 380px;
+    min-width: 300px;
     height: 100vh;
     background: linear-gradient(180deg, #13181c, #1f2736);
     overflow-y:auto;

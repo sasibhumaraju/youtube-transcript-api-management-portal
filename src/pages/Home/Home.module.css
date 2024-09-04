@@ -2,7 +2,7 @@
     height: max-content;
     min-height: calc(680px - 200px);
     width: calc(100vw - 40px);
-    min-width: calc(380px - 40px);
+    min-width: calc(300px - 40px);
     display: flex;
     /* justify-content: center; */
     flex-direction: column;
